@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="打印配置"
+        android:textColor="#ff2f3344"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/withe"
+
+      >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="24dp"
+            android:text="自动打印"
+            android:textColor="#ff2f3344"
+            android:textSize="18sp" />
+
+        <com.suke.widget.SwitchButton
+
+            android:id="@+id/auto_print_sb"
+            android:layout_width="56dp"
+            android:layout_height="32sp"
+            android:layout_marginEnd="24dp"
+         android:layout_gravity="end|center_vertical"
+            app:sb_background="#999DB1"
+            app:sb_border_width="1dp"
+            app:sb_checked="false"
+            app:sb_checked_color="#EC414D"
+            app:sb_shadow_color="#000000"
+            app:sb_shadow_offset="0dp"
+            app:sb_shadow_radius="0dp"
+            app:sb_show_indicator="false"
+            app:sb_uncheck_color="#999DB1"
+            app:sb_uncheckcircle_color="#999DB1" />
+        <View
+            android:layout_gravity="bottom"
+            android:background="#1a000000"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:id="@+id/print_size_fl"
+        android:background="@color/withe"
+        >
+
+        <TextView
+            android:drawableEnd="@mipmap/resale_arrow_right"
+            android:layout_marginEnd="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="24dp"
+            android:text="打印规格"
+            android:textColor="#ff2f3344"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/print_size_tv"
+            android:gravity="center"
+            android:layout_marginEnd="64dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="80mm"
+            android:textColor="#ff7a7e95"
+            android:textSize="18sp"
+            />
+
+        <View
+            android:layout_gravity="bottom"
+            android:background="#1a000000"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+    </FrameLayout>
+    <!--打印张数-->
+    <FrameLayout
+        android:id="@+id/print_number_fl"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+
+        android:background="@color/withe"
+        >
+
+        <TextView
+            android:drawableEnd="@mipmap/resale_arrow_right"
+            android:layout_marginEnd="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="24dp"
+            android:text="打印张数"
+            android:textColor="#ff2f3344"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/print_number_tv"
+            android:gravity="center"
+            android:layout_marginEnd="64dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="2张"
+            android:textColor="#ff7a7e95"
+            android:textSize="18sp"
+            />
+
+        <View
+            android:layout_gravity="bottom"
+            android:background="#1a000000"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="头部"
+        android:textColor="#ff2f3344"
+        android:textSize="18sp"
+        />
+    <!--店铺名称-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/withe"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="24dp"
+            android:text="店铺名称"
+            android:textColor="#ff2f3344"
+            android:textSize="18sp" />
+
+        <com.suke.widget.SwitchButton
+
+            android:id="@+id/shop_name_sb"
+            android:layout_width="56dp"
+            android:layout_height="32sp"
+            android:layout_marginEnd="24dp"
+            android:layout_gravity="end|center_vertical"
+            app:sb_background="#999DB1"
+            app:sb_border_width="1dp"
+            app:sb_checked="false"
+            app:sb_checked_color="#EC414D"
+            app:sb_shadow_color="#000000"
+            app:sb_shadow_offset="0dp"
+            app:sb_shadow_radius="0dp"
+            app:sb_show_indicator="false"
+            app:sb_uncheck_color="#999DB1"
+            app:sb_uncheckcircle_color="#999DB1" />
+        <View
+            android:layout_gravity="bottom"
+            android:background="#1a000000"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+    </FrameLayout>
+    <!--logo图片-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:id="@+id/logo_fl"
+        android:background="@color/withe"
+        >
+
+        <TextView
+            android:drawableEnd="@mipmap/resale_arrow_right"
+            android:layout_marginEnd="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="24dp"
+            android:text="logo图片"
+            android:textColor="#ff2f3344"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/logo_file_name_tv"
+            android:gravity="center"
+            android:layout_marginEnd="64dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="图片jifpj.jpg"
+            android:textColor="#ff7a7e95"
+            android:textSize="18sp"
+            />
+
+        <View
+            android:layout_gravity="bottom"
+            android:background="#1a000000"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+    </FrameLayout>
+
+    <!--店铺标题-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+
+        android:background="@color/withe"
+        >
+
+        <TextView
+
+            android:layout_marginEnd="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="24dp"
+            android:text="店铺标题"
+            android:textColor="#ff2f3344"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/title_et"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+            android:layout_marginEnd="24dp"
+            android:layout_gravity="end|center_vertical"
+            android:minWidth="126dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="我是标题"
+            android:textColor="#ff7a7e95"
+            android:textSize="18sp"
+            />
+
+        <View
+            android:layout_gravity="bottom"
+            android:background="#1a000000"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+    </FrameLayout>
+
+    <!--单据条形码-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+
+        android:background="@color/withe"
+        >
+
+        <TextView
+
+            android:layout_marginEnd="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="24dp"
+            android:text="单据条形码"
+            android:textColor="#ff2f3344"
+            android:textSize="18sp" />
+
+        <com.suke.widget.SwitchButton
+
+            android:id="@+id/bar_code_sb"
+            android:layout_width="56dp"
+            android:layout_height="32sp"
+            android:layout_marginEnd="24dp"
+            android:layout_gravity="end|center_vertical"
+            app:sb_background="#999DB1"
+            app:sb_border_width="1dp"
+            app:sb_checked="false"
+            app:sb_checked_color="#EC414D"
+            app:sb_shadow_color="#000000"
+            app:sb_shadow_offset="0dp"
+            app:sb_shadow_radius="0dp"
+            app:sb_show_indicator="false"
+            app:sb_uncheck_color="#999DB1"
+            app:sb_uncheckcircle_color="#999DB1" />
+
+        <View
+            android:layout_gravity="bottom"
+            android:background="#1a000000"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+    </FrameLayout>
+
+
+
+</LinearLayout>

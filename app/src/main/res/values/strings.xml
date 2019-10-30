@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="drawer_item_home">Home</string>
+    <string name="drawer_item_section_header">Header</string>
+    <string name="drawer_item_settings">setting</string>
+    <string name="drawer_item_help">Help</string>
+    <string name="drawer_item_open_source">sourc</string>
+    <string name="drawer_item_contact">contact</string>
+</resources>

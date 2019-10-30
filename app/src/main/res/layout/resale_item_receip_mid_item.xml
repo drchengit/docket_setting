@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/one_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="商品名称（规格）"
+        android:textColor="@color/resale_color_2F3344"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toStartOf="@+id/two_tv"
+        app:layout_constraintHorizontal_weight="176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/two_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="0"
+        android:textColor="@color/resale_color_2F3344"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/three_tv"
+        app:layout_constraintHorizontal_weight="72"
+        app:layout_constraintStart_toEndOf="@+id/one_tv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/three_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="2"
+        android:textColor="@color/resale_color_2F3344"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/four_tv"
+        app:layout_constraintHorizontal_weight="48"
+        app:layout_constraintStart_toEndOf="@+id/two_tv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:gravity="end"
+        android:id="@+id/four_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="5.60"
+        android:textColor="@color/resale_color_2F3344"
+
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="56"
+        app:layout_constraintStart_toEndOf="@+id/three_tv"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

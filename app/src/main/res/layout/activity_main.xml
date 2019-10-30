@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:orientation="vertical"
+    >
+
+ <Button
+     android:text="购货小票"
+     android:id="@+id/shop_ticket_bn"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content" />
+    <Button
+        android:text="退货小票"
+        android:id="@+id/sales_ticket_bn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="打印购货小票"
+        android:id="@+id/print_shop_ticket_bn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="打印退货小票"
+        android:id="@+id/print_sales_ticket_bn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

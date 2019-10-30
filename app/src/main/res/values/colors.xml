@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="withe">#ffffff</color>
+    <color name="resale_color_2F3344">#2f3344</color>
+    <color name="resale_color_7A7E95">#7A7E95</color>
+    <color name="resale_color_EC414D">#EC414D</color>
+</resources>
