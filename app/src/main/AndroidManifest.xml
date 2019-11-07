@@ -10,12 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.TestActivity"
-            android:screenOrientation="landscape"
-            >
 
-
-        </activity>
         <!-- app最大占屏长宽比 -->
         <meta-data
             android:name="android.max_aspect"
@@ -27,16 +22,14 @@
             android:name="design_height_in_dp"
             android:value="768" />
 
-        <activity android:name=".activity.ReceipActivity" />
-        <activity
-            android:name=".activity.MainActivity"
-            android:screenOrientation="landscape">
+        <activity android:name=".activity.ReceipActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
